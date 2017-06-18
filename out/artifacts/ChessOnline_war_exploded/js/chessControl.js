@@ -41,7 +41,6 @@ var vm = new Vue({
             // 游戏尚未结束
             if (!this.chessBoard.endFlag) {
                 if (this.XA == null && chess != null && chess.color == this.chessBoard.authority) {
-                    // ele.style.borderStyle = "solid";
                     console.log("原坐标：" + XN + "-" + YN);
                     this.XA = XN;
                     this.YA = YN;

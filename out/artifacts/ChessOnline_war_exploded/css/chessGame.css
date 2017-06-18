@@ -28,6 +28,10 @@ body {
     border: 2px solid firebrick;
 }
 
+.check {
+    border: 2px solid firebrick;
+}
+
 .chessImg, .emptyImg {
     margin-left: 7px;
     margin-right: 7px;

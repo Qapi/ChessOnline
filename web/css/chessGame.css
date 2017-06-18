@@ -24,7 +24,7 @@ body {
     cursor: pointer;
 }
 
-.chessImg:hover {
+.chessImg:hover .check {
     border: 2px solid firebrick;
 }
 

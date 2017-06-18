@@ -9,11 +9,12 @@
 <body>
 <div id="main">
     <div id="beginBtn" class="beginBtn">
-        <button type="button" class="btn btn-primary" @click="initGame()" v-text="beginGame?'重新开始':'开始游戏'"></button>
+        <button type="button" class="btn btn-primary btn-lg" @click="initGame()"
+                v-text="beginGame?'重新开始':'开始游戏'"></button>
     </div>
     <div v-for="(chessArray,i) in chessBoard.board">
         <img v-if="chess != null" v-for="(chess,j) in chessArray" :src="'image/'+chess.color+chess.iden+'.GIF'"
-             class="chessImg" @click="moveChess(chess,i,j)"/>
+             class="chessImg" :class="{'check' : i == XA && j==YA}" @click="moveChess(chess,i,j)"/>
         <img v-else src="image/transparent.jpg" class="emptyImg" @click="moveChess(chess,i,j)"/>
 
     </div>
